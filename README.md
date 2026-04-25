@@ -26,3 +26,24 @@ Takes the extracted information and organizes it into a coherent task plan. It c
 
 A lightweight Controller coordinates the flow:
 User input → Extraction Agent → Task Planner Agent → Final structured output.
+
+Frameworks, Tools, and Services
+Programming Language: Python 3.11
+
+Agent Framework: CrewAI 
+
+LLM Provider: OpenAI (e.g., GPT‑4o‑mini or GPT‑4o)
+
+Vector Store: ChromaDB
+
+Embeddings: text‑embedding‑3‑small
+
+Environment Management: python-dotenv
+
+Other Libraries:
+
+rich — CLI formatting
+
+pydantic — schema validation
+
+typer — CLI interface (if used)
