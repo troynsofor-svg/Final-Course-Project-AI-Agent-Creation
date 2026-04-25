@@ -69,7 +69,7 @@ OPENAI_API_KEY="your-api-key-here"
 MODEL_NAME="gpt-4o-mini"
 Add any additional variables your architecture requires.
 
-▶️ Running the Agent
+Running the Agent
 Command Line
 bash
 python main.py
@@ -151,7 +151,7 @@ Checklist:
 [ ] Upload slides to Canvas
 
 
-🎥 Demo Video
+Demo Video
 Add your recorded walkthrough here:
 
 markdown
