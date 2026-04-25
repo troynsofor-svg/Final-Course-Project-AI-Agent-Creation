@@ -150,6 +150,21 @@ Checklist:
 [ ] Upload video to Canvas
 [ ] Upload slides to Canvas
 
+Known Limitations
+LLM Dependence:  
+Accuracy depends on the underlying LLM; hallucinations may occur with ambiguous instructions.
+
+No OCR Pipeline (unless added):  
+Screenshots must be pre‑converted to text.
+
+Limited Cross‑Assignment Memory:  
+The system does not track assignments across multiple runs unless explicitly implemented.
+
+Inconsistent Formatting:  
+Extremely chaotic or contradictory instructions may require manual review.
+
+Latency:  
+Multi‑agent coordination increases response time compared to a single‑agent system.
 
 Demo Video
 Add your recorded walkthrough here:
