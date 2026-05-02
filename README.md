@@ -170,4 +170,4 @@ Demo Video
 Add your recorded walkthrough here:
 
 markdown
-[Demo Video (YouTube / Loom)](https://your-demo-link)
+https://drive.google.com/drive/home
