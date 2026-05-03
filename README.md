@@ -1,16 +1,19 @@
 # Final-Course-Project-AI-Agent-Creation
-Problem
-Students waste hours trying to organize messy assignment instructions, deadlines, and requirements scattered across multiple platforms. A single assignment might involve a Canvas module, a PDF rubric, an email announcement, a screenshot from lecture slides, and a shared Google Doc. Because the information is fragmented and inconsistent, students often miss key details, misunderstand expectations, or spend more time deciphering instructions than actually completing the work. This creates unnecessary stress, reduces productivity, and leads to preventable mistakes.
 
-Why this matters
-Modern academic workflows are chaotic. Students juggle multiple classes, each with its own format, structure, and communication style. The cognitive load of simply figuring out what to do becomes a barrier to learning. Automating this process saves time, reduces errors, and gives students a clear, reliable way to understand and plan their academic tasks.
+“My system doesn't use Retrieval‑Augmented Generation (RAG). All logic and text generation is done narrowly using a HuggingFace model covered as a tool, with no knowledge retrieval or semantic search.”
 
-Target Users
-Primary users: University students managing multiple courses with inconsistent assignment formats
+Problem:
+Students waste or take too much time trying to organize messy homework directions, due dates, and requirements scattered across tons of platforms. One assignment may have something to do with a Canvas module, a PDF rubric, an email notification, an image from the lecture slides, and a shared Google Doc. Because the details are incomplete and incompatible, students frequently miss key information, misunderstand beliefs, or spend extra time deciphering directions instead of actually doing the work. This leads to unnecessary stress, decreases productivity, and causes preventable errors.
 
-Secondary users: Students with heavy workloads, part‑time jobs, or executive‑function challenges
+Why this matters:
+Modern academic workflows are disorganized. Students handle tons of classes, each with its own format, form, and methods. The mental workload of simply thinking about what to do becomes a obstacle to learning. Automating this procedure saves time, decreases mistakes, and gives students a understandable, dependable way to comprehend and plan their educational tasks.
 
-Context of use: Running the agent through a Python script or notebook to instantly extract requirements, deadlines, and tasks from messy assignment inputs
+Target Users:
+Primary users: University students handling lots of courses with incompatible assignment formats
+
+Secondary users: Students with huge tasks, part‑time employment, or executive‑function problems
+
+Context of use: Running an agent on a Python script or notebook to immediately extract requirements, due dates, and duties from disorganized homework inputs
 
 Chosen Option
 Architecture Type: Multi‑Agent System
@@ -30,7 +33,7 @@ User input → Extraction Agent → Task Planner Agent → Final structured outp
 Frameworks, Tools, and Services
 Programming Language: Python 3.11
 
-Agent Framework: CrewAI 
+Agent Framework: CrewAI version 0.28.8
 
 LLM Provider: OpenAI (e.g., GPT‑4o‑mini or GPT‑4o)
 
@@ -40,27 +43,32 @@ Embeddings: text‑embedding‑3‑small
 
 Environment Management: python-dotenv
 
-Other Libraries:
+Libraries:
 
-rich — CLI formatting
+Transformers (HuggingFace)
+Python Standard Library
 
-pydantic — schema validation
-
-typer — CLI interface (if used)
+Tools:
+Local Model Tool (HuggingFace Model Wrapper)
+Dummy LLM
+Weather Tool (simple text‑generation call)
 
 Installation
 1. Clone the repository
 bash
 git clone https://github.com/<your-username>/<your-repo-name>.git
 cd <your-repo-name>
+
 2. Create and activate a virtual environment
 bash
 python -m venv .venv
 source .venv/bin/activate   # macOS / Linux
 .venv\Scripts\activate      # Windows
+
 3. Install dependencies
 bash
 pip install -r requirements.txt
+
 Environment Variables
 Create a .env file in the project root:
 
