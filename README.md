@@ -48,7 +48,7 @@ Local Model Tool (HuggingFace Model Wrapper)
 Dummy LLM
 Weather Tool (simple text‑generation call)
 
-Installation Steps
+Installation Steps:
 1. Python Version
 Your project uses:
 
