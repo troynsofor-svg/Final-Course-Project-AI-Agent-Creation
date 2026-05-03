@@ -31,65 +31,83 @@ A lightweight Controller coordinates the flow:
 User input → Extraction Agent → Task Planner Agent → Final structured output.
 
 Frameworks, Tools, and Services
-Programming Language: Python 3.11
+Programming Language: Python 3.12
 
-Agent Framework: CrewAI version 0.28.8
-
-LLM Provider: OpenAI (e.g., GPT‑4o‑mini or GPT‑4o)
-
-Vector Store: ChromaDB
-
-Embeddings: text‑embedding‑3‑small
-
-Environment Management: python-dotenv
-
-Libraries:
-
+Agent Frameworks: 
+CrewAI (version 0.28.8)
 Transformers (HuggingFace)
 Python Standard Library
+
+Libraries:
+rich — CLI formatting
+pydantic — schema validation
+typer — CLI interface (if used)
 
 Tools:
 Local Model Tool (HuggingFace Model Wrapper)
 Dummy LLM
 Weather Tool (simple text‑generation call)
 
+My last system has no external services, no LLM provider, no vector store
+
 Installation Steps
-1. Clone the repository
-bash
-git clone https://github.com/<your-username>/<your-repo-name>.git
-cd <your-repo-name>
+1. Python Version
+Your project uses:
 
-2. Create and activate a virtual environment
-bash
-python -m venv .venv
-source .venv/bin/activate   # macOS / Linux
-.venv\Scripts\activate      # Windows
+Python 3.12 (Google Colab default)
+CrewAI 0.28.8 works correctly under Python 3.12 in Colab, which is the environment you used.
 
-3. Install dependencies
-bash
-pip install -r requirements.txt
+If running locally, Python 3.10–3.12 is safe.
 
-Environment Variables
-Create a .env file in the project root:
+2. Install CrewAI (Version 0.28.8)
+CrewAI 0.28.8 is the version that allows offline operation and does not require OpenAI.
 
 bash
-OPENAI_API_KEY="your-api-key-here"
-MODEL_NAME="gpt-4o-mini"
-Add any additional variables your architecture requires.
-
-Running the Agent
-Command Line
-bash
-python main.py
-Or with direct input:
+pip install crewai==0.28.8
+3. Install HuggingFace Transformers
+This is required for your local text‑generation model tool.
 
 bash
-python main.py --input "Here is my assignment text..."
-Notebook Demo
-Open notebooks/demo.ipynb
+pip install transformers
+4. Install Additional Dependencies
+These are required by CrewAI 0.28.8 and your model wrapper.
 
-Run all cells
+bash
+pip install pydantic python-dotenv regex
+(Colab already includes torch, but if running locally you may need to install it.)
 
+5. (Optional) Install PyTorch if running locally
+If you run the project outside Colab, install PyTorch manually:
+
+bash
+pip install torch
+6. Verify CrewAI Version
+To confirm the correct version is installed:
+
+bash
+pip show crewai
+You should see:
+
+Code
+Version: 0.28.8
+7. No OpenAI Setup Required
+Because you are using:
+
+CrewAI 0.28.8
+
+DummyLLM
+
+Local HuggingFace model tool
+
+You do not need:
+
+OPENAI_API_KEY
+
+OPENAI_API_BASE
+
+Any external LLM provider
+
+Your system is fully offline.
 Modify the input cell to test different assignment instructions
 
 Example Usage
