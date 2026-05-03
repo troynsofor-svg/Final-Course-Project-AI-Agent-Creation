@@ -1,6 +1,6 @@
 # Final-Course-Project-AI-Agent-Creation
 
-“My system doesn't use Retrieval‑Augmented Generation (RAG). All logic and text generation is done narrowly using a HuggingFace model covered as a tool, with no knowledge retrieval or semantic search.”
+“My system doesn't use Retrieval‑Augmented Generation (RAG). All logic and text generation is done narrowly using a HuggingFace model covered as a tool, with no knowledge retrieval or semantic search.” Also it has no external services, no LLM provider, no vector store, no environment variables, no OpenAI setup, no external APIs and no external API keys.
 
 Problem:
 Students waste or take too much time trying to organize messy homework directions, due dates, and requirements scattered across tons of platforms. One assignment may have something to do with a Canvas module, a PDF rubric, an email notification, an image from the lecture slides, and a shared Google Doc. Because the details are incomplete and incompatible, students frequently miss key information, misunderstand beliefs, or spend extra time deciphering directions instead of actually doing the work. This leads to unnecessary stress, decreases productivity, and causes preventable errors.
@@ -47,8 +47,6 @@ Tools:
 Local Model Tool (HuggingFace Model Wrapper)
 Dummy LLM
 Weather Tool (simple text‑generation call)
-
-My last system has no external services, no LLM provider, no vector store
 
 Installation Steps
 1. Python Version
@@ -100,9 +98,7 @@ DummyLLM
 Local HuggingFace model tool
 
 You do not need:
-
 OPENAI_API_KEY
-
 OPENAI_API_BASE
 
 Any external LLM provider
