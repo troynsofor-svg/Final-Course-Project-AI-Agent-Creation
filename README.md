@@ -174,5 +174,5 @@ Extremely chaotic or contradictory instructions may require manual review.
 Latency:  
 Multi‑agent coordination increases response time compared to a single‑agent system.
 
-Demo Video
+Demo Video:
 Click on FN_Demo_Nsofor_Troy_ITAI_2376.mov from this website: https://drive.google.com/drive/home
