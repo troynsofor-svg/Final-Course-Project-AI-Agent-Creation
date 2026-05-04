@@ -27,8 +27,11 @@ Uses a fine‑tuned BERT‑style model (or LLM‑based extraction pipeline) to i
 Task Planner Agent  
 Takes the extracted information and organizes it into a coherent task plan. It classifies tasks (reading, writing, coding, research, submission steps), identifies dependencies, and generates a timeline or checklist. It uses an LLM planner to reason about workload, ordering, and clarity.
 
+Weather Agent
+Handles everday weather queries, like asking what the weather is or is like in a specific city, state, or country, illustrating that the system could help with everyday assistant duties. 
+
 A lightweight Controller coordinates the flow:
-User input → Extraction Agent → Task Planner Agent → Final structured output.
+User input → Extraction Agent → Task Planner Agent → Weather Agent → Final structured output.
 
 Frameworks, Tools, and Services
 Programming Language: Python 3.12
@@ -59,36 +62,36 @@ If running locally, Python 3.10–3.12 is safe.
 
 2. Install CrewAI (Version 0.28.8)
 CrewAI 0.28.8 is the version that allows offline operation and does not require OpenAI.
-
 bash
 pip install crewai==0.28.8
-3. Install HuggingFace Transformers
-This is required for your local text‑generation model tool.
 
+3. Install HuggingFace Transformers
+This is needed for the local large language model tool.
 bash
 pip install transformers
-4. Install Additional Dependencies
-These are required by CrewAI 0.28.8 and your model wrapper.
 
+4. Install more Dependencies
+These are needed by CrewAI 0.28.8 and the model wrapper.
 bash
 pip install pydantic python-dotenv regex
-(Colab already includes torch, but if running locally you may need to install it.)
+(Colab already has torch, but if running locally you might have to install it.)
 
 5. (Optional) Install PyTorch if running locally
 If you run the project outside Colab, install PyTorch manually:
-
 bash
 pip install torch
-6. Verify CrewAI Version
+
+7. Verify CrewAI Version
 To confirm the correct version is installed:
 
 bash
 pip show crewai
-You should see:
 
+You should be able to see:
 Code
 Version: 0.28.8
-7. No OpenAI Setup Required
+
+7. No OpenAI Setup Needed
 Because you are using:
 
 CrewAI 0.28.8
@@ -97,14 +100,11 @@ DummyLLM
 
 Local HuggingFace model tool
 
-You do not need:
+You don't need:
 OPENAI_API_KEY
 OPENAI_API_BASE
 
-Any external LLM provider
-
-Your system is fully offline.
-Modify the input cell to test different assignment instructions
+The system is entirely offline.
 
 Example Usage
 Example 1 — Extracting Requirements
@@ -157,13 +157,13 @@ Planned Tasks:
 2. Record 5–7 minute video
 3. Export video file
 4. Upload video and slides to Canvas
+
 Example 3 — Checklist Mode
 Input:
-
 Code
 "Make me a checklist for this assignment."
-Output:
 
+Output:
 Code
 Checklist:
 [ ] Draft slide deck
@@ -174,19 +174,19 @@ Checklist:
 
 Known Limitations
 LLM Dependence:  
-Accuracy depends on the underlying LLM; hallucinations may occur with ambiguous instructions.
+Accuracy relies on a underlying LLM; hallucinations might happen with misleading directions.
 
-No OCR Pipeline (unless added):  
-Screenshots must be pre‑converted to text.
+No OCR Pipeline (unless included):  
+Screenshots need to be pre‑transformed into text.
 
 Limited Cross‑Assignment Memory:  
-The system does not track assignments across multiple runs unless explicitly implemented.
+This system cannot track homework over multiple runs unless it's clearly implemented.
 
 Inconsistent Formatting:  
-Extremely chaotic or contradictory instructions may require manual review.
+Intensely disorganized or contradictory directions might need a manual review.
 
 Latency:  
-Multi‑agent coordination increases response time compared to a single‑agent system.
+Multi‑agent collaboration maximizes answer time compared to a single‑agent model.
 
 I uploaded the agent.ipynb file to GitHub, but when I did that, I got an error. The error said, Invalid Notebook
 There was an error rendering your Notebook: the 'state' key is missing from 'metadata.widgets'. So I placed the link inside the README.
