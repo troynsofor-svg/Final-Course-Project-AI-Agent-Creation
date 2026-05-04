@@ -183,7 +183,7 @@ Latency:
 Multi‑agent collaboration maximizes answer time compared to a single‑agent model.
 
 I uploaded the agent.ipynb file to GitHub, but when I did that, I got an error. The error said, Invalid Notebook
-There was an error rendering your Notebook: the 'state' key is missing from 'metadata.widgets'. So I placed the link inside the README.
+There was an error rendering your Notebook: the 'state' key is missing from 'metadata.widgets'. So I placed the link inside this README.
 
 Demo Video:
 Click on FN_Demo_Nsofor_Troy_ITAI_2376.mov from this website: https://drive.google.com/drive/home
