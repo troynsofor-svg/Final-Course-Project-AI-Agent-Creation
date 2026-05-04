@@ -153,9 +153,9 @@ Homework: Demo Video
 Deadline: April 12
 
 Extracted Requirements:
-- 5–7 minute demo video
-- Upload slide deck
-- Submit both files to Canvas
+- Demo video needs to be between 5 and 7 minutes
+- Submit slide deck
+- Turn in both files to Canvas
 
 Planned Tasks:
 1. Outline slide deck
