@@ -188,6 +188,9 @@ Extremely chaotic or contradictory instructions may require manual review.
 Latency:  
 Multi‑agent coordination increases response time compared to a single‑agent system.
 
+I uploaded the agent.ipynb file to GitHub, but when I did that, I got an error. The error said, Invalid Notebook
+There was an error rendering your Notebook: the 'state' key is missing from 'metadata.widgets'. So I placed the link inside the README.
+
 Demo Video:
 Click on FN_Demo_Nsofor_Troy_ITAI_2376.mov from this website: https://drive.google.com/drive/home
 
