@@ -14,7 +14,7 @@ Problem:
 Students waste or take too much time trying to organize messy homework directions, due dates, and requirements scattered across tons of platforms. One assignment may have something to do with a Canvas module, a PDF rubric, an email notification, an image from the lecture slides, and a shared Google Doc. Because the details are incomplete and incompatible, students frequently miss key information, misunderstand beliefs, or spend extra time deciphering directions instead of actually doing the work. This leads to unnecessary stress, decreases productivity, and causes preventable errors.
 
 Why this matters:
-Modern academic workflows are disorganized. Students handle tons of classes, each with its own format, form, and methods. The mental workload of simply thinking about what to do becomes a obstacle to learning. Automating this procedure saves time, decreases mistakes, and gives students a understandable, dependable way to comprehend and plan their educational tasks.
+Modern academic workflows are disorganized. Students handle tons of classes, each with its own format, form, and methods. The mental workload of simply thinking about what to do becomes an obstacle to learning. Automating this procedure saves time, decreases mistakes, and gives students a understandable, dependable way to comprehend and plan their educational tasks.
 
 Target Users:
 Primary users: University students handling lots of courses with incompatible assignment formats
@@ -27,10 +27,10 @@ Chosen Option
 Architecture Type: Multi‑Agent System
 
 Architecture Overview
-This project implements a two‑agent collaborative architecture designed to transform unstructured academic content into a clean, actionable assignment summary.
+The project uses a three‑agent collaborative architecture made to change unstructured academic content into a clean, actionable homework summary.
 
 Extraction Agent  
-Uses a fine‑tuned BERT‑style model (or LLM‑based extraction pipeline) to identify key components from raw text: requirements, deadlines, deliverables, file formats, constraints, and grading criteria. It converts messy, inconsistent instructions into a structured intermediate representation.
+Uses a fine‑tuned BERT‑style model (or (IDP) intelligent document processing pipeline) to spot key features from raw text: requirements, due dates, deliverables, file types, limitations, and grading criteria. It transforms disorganized, incompatible directions into a structured intermediate representation.
 
 Task Planner Agent  
 Takes the extracted information and organizes it into a coherent task plan. It classifies tasks (reading, writing, coding, research, submission steps), identifies dependencies, and generates a timeline or checklist. It uses an LLM planner to reason about workload, ordering, and clarity.
@@ -175,7 +175,42 @@ Checklist:
 [ ] Upload video to Canvas
 [ ] Upload slides to Canvas
 
-The Limitations of LLM Dependence:  
+Example 1
+Input
+python
+run_weather_crew("What is the weather in Seattle?")
+
+Output
+Code
+It seems like Seattle is facing heavy weather with clouds today. I believe that light will
+mizzle throughout the afternoon with the weather in the mid‑50s. You might want
+to bring and wear a coat or sweater if you're going out.
+
+Example 2
+Input
+python
+run_weather_crew("What's the weather like in New York right now?")
+
+Output
+Code
+New York is experiencing moderate spring weather with moderately grey skies. The weather is now gliding around the low 60s, and there’s a gentle breeze. No main rain is
+believed to happen in the next few hours.
+
+Example 3
+Input
+python
+run_weather_crew("Is it going to rain in Houston today?")
+
+Output
+Code
+Houston might experience intermittent rainfalls later in the day, even in the early
+evening. The rest of the day will be warm and steamy with high temperatures in the upper
+70s. Bring your umbrella with you and keep it useful just in case.
+
+
+The Limitations 
+
+LLM Dependence:  
 Accuracy relies on a underlying LLM; hallucinations might happen with misleading directions.
 
 No OCR Pipeline (unless included):  
