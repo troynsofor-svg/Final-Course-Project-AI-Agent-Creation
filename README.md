@@ -53,24 +53,24 @@ Weather Tool (simple text‑generation call)
 
 Installation Steps:
 1. Python Version
-Your project uses:
+My project uses:
 
-Python 3.12 (Google Colab default)
-CrewAI 0.28.8 works correctly under Python 3.12 in Colab, which is the environment you used.
+Python 3.12 (Google Colab default):
+CrewAI 0.28.8 works accurately on Python 3.12 in Colab, which is an environment I used.
 
-If running locally, Python 3.10–3.12 is safe.
+If running locally, Python 3.10–3.12 is okay.
 
-2. Install CrewAI (Version 0.28.8)
-CrewAI 0.28.8 is the version that allows offline operation and does not require OpenAI.
+2. Install CrewAI (Version 0.28.8):
+CrewAI 0.28.8 is the type of version that enables offline operation and doesn't need OpenAI.
 bash
 pip install crewai==0.28.8
 
-3. Install HuggingFace Transformers
+3. Install HuggingFace Transformers:
 This is needed for the local large language model tool.
 bash
 pip install transformers
 
-4. Install more Dependencies
+4. Install more Dependencies:
 These are needed by CrewAI 0.28.8 and the model wrapper.
 bash
 pip install pydantic python-dotenv regex
@@ -81,29 +81,24 @@ If you run the project outside Colab, install PyTorch manually:
 bash
 pip install torch
 
-7. Verify CrewAI Version
+6. Confirm the CrewAI Version
 To confirm the correct version is installed:
-
 bash
 pip show crewai
-
 You should be able to see:
 Code
 Version: 0.28.8
 
 7. No OpenAI Setup Needed
 Because you are using:
-
 CrewAI 0.28.8
-
 DummyLLM
-
 Local HuggingFace model tool
 
 You don't need:
 OPENAI_API_KEY
 OPENAI_API_BASE
-
+An LLM API provider
 The system is entirely offline.
 
 Example Usage
