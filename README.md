@@ -1,8 +1,11 @@
 # Final-Course-Project-AI-Agent-Creation
 
 Troy Nsofor
+
 5/3/2026
+
 ITAI 2376
+
 Mrs. McManus
 
 “My system doesn't use Retrieval‑Augmented Generation (RAG). All logic and text generation is done narrowly using a HuggingFace model covered as a tool, with no knowledge retrieval or semantic search.” Also it has no external services, no LLM provider, no vector store, no environment variables, no OpenAI setup, no external APIs and no external API keys.
