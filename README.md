@@ -167,8 +167,7 @@ Checklist:
 [ ] Upload video to Canvas
 [ ] Upload slides to Canvas
 
-Known Limitations
-LLM Dependence:  
+The Limitations of LLM Dependence:  
 Accuracy relies on a underlying LLM; hallucinations might happen with misleading directions.
 
 No OCR Pipeline (unless included):  
