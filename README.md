@@ -112,24 +112,25 @@ The system is entirely offline.
 Example Usage
 Example 1 — Extracting Requirements
 Input:
-
 Code
+
 Assignment 3: Research Reflection
-Due next Friday before 11:59pm.
-Write 2–3 pages reflecting on your research process.
-Include at least 3 sources. Submit as a PDF on Canvas.
-Also complete the peer review by Sunday.
-Output (excerpt):
+Due next week on Friday at 11:59pm.
+Write 2–3 pages showing your research procedure.
+Add at least three sources. Turn it in as a PDF on Canvas.
+Also do the peer study on Sunday.
 
+Output (excerpt):
 Code
+
 Assignment: Research Reflection
-Due Date: Friday, 11:59pm
+Deadline: Friday, 11:59pm
 
 Extracted Requirements:
-- 2–3 page reflection on research process
+- 2–3 page reflection on research procedure
 - Minimum 3 sources
-- PDF submission on Canvas
-- Peer review due Sunday
+- PDF deliverable on Canvas
+- Deadline for the peer review is Sunday
 
 Planned Tasks:
 1. Read and annotate 3 sources
@@ -137,29 +138,30 @@ Planned Tasks:
 3. Revise and export as PDF
 4. Submit PDF to Canvas
 5. Complete peer review
+
 Example 2 — Combining Messy Inputs
 Input:
 
 Code
-Canvas page says: "Submit the video presentation by April 12."
-Rubric PDF says: "Presentation must be 5–7 minutes."
+Canvas page says: "Turn in the video presentation on April 12."
+Rubric PDF says: "Presentation needs to be 5–7 minutes."
 Email says: "Don't forget to upload your slides as well."
 Output (excerpt):
 
 Code
-Assignment: Video Presentation
-Due Date: April 12
+Homework: Demo Video
+Deadline: April 12
 
 Extracted Requirements:
-- 5–7 minute video presentation
+- 5–7 minute demo video
 - Upload slide deck
 - Submit both files to Canvas
 
 Planned Tasks:
-1. Draft slide deck
-2. Record 5–7 minute video
-3. Export video file
-4. Upload video and slides to Canvas
+1. Outline slide deck
+2. Record the demo video between 5 and 7 minutes
+3. Export video recording
+4. Submit demo video and PowerPoint slides to Canvas
 
 Example 3 — Checklist Mode
 Input:
@@ -169,11 +171,11 @@ Code
 Output:
 Code
 Checklist:
-[ ] Draft slide deck
-[ ] Record 5–7 minute video
-[ ] Export video file
-[ ] Upload video to Canvas
-[ ] Upload slides to Canvas
+[ ] Outline slide deck
+[ ] Record the demo video between 5 and 7 minutes
+[ ] Export video recording
+[ ] Submit the video to Canvas
+[ ] Submit the PowerPoint slides to Canvas
 
 Example 1
 Input
